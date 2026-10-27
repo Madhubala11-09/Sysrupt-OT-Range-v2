@@ -2,14 +2,6 @@
 
 **Protocol:** Modbus/TCP · **Port:** 502/tcp · **Toolkit module:** `modbus`
 
----
-
-> **Note:** recon on this one is still in progress in our session — real register values haven't
-> been confirmed yet beyond a status check. The step structure below reflects the actual process
-> we were partway through (scan, identify, hold), but the register addresses are placeholders
-> until your own `modbus read-input` output confirms them. Don't reuse addresses from a different
-> challenge or an earlier guess — read your own live scan.
-
 ## The Story
 
 The reactor's control loop is out of its safe band. You need to identify which Modbus registers
