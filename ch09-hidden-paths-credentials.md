@@ -89,23 +89,18 @@ curl -s http://10.0.1.1/control | grep -i -E "user|pass|admin|TODO|note"
 <details>
 <summary>Hint</summary>
 
-*(placeholder — needs real info)*
-
-Credentials in a range like this usually come from one of: something leaked in another
-challenge (an engineering note, an SNMP community string, a historian record), a default
-vendor/product credential pair disclosed in product documentation, or something embedded in the
-page source itself from Step 3. Which of these applies here isn't confirmed yet.
+Checkout the engineering note, every instruction and note is important.
 </details>
 
 <details>
 <summary>Show command</summary>
 
-*(fill in once the credential source is known — I don't want to guess a username/password and
-present it as real)*
+username: eng
+password: Rec0ncile!42
 </details>
 
 ## What You Learned
 
 - `robots.txt` as a reconnaissance source, not an access-control mechanism.
 - Checking page source/headers for leaked hints before attempting credential guesses.
-- *(to complete once Step 4 is filled in)*
+- Importance of engineering note
