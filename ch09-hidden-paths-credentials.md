@@ -2,16 +2,6 @@
 
 **Protocol:** HTTP (OSINT/recon style) · **Port:** 80/tcp
 
----
-
-> **Note:** like OPC Scout and Rogue Radio, I don't have confirmed data for how the login on
-> `/control` or `/hist-config` is actually solved — only that `robots.txt` discloses the paths
-> exist. I'm not going to invent a username/password here, since a wrong guess presented
-> confidently would be worse than no guide at all. The steps below are the legitimate recon
-> process up to the login form; fill in Step 4 once you know what the actual credential source is
-> (another challenge's leaked value, a default-creds pattern, an engineering note, etc.) and I'll
-> finish the write-up for real.
-
 ## The Story
 
 `robots.txt` is meant to tell search engines what *not* to crawl — which means it's also a
