@@ -84,9 +84,12 @@ Checkout the engineering note, every instruction and note is important.
 
 <details>
 <summary>Show command</summary>
-
+  
+```bash
 username: eng
 password: Rec0ncile!42
+```
+
 </details>
 
 ## What You Learned
